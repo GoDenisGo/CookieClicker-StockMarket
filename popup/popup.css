@@ -1,0 +1,24 @@
+body {
+    min-width: 300px;
+    background-color: navajowhite;
+}
+
+h1 {
+    justify-self: center;
+}
+
+h2 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+td {
+    text-align: center;
+}
+
+tbody td {
+    padding: 2px 0;
+}

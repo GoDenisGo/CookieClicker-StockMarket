@@ -1,0 +1,19 @@
+{
+  "name": "cookieclicker-stockmarket",
+  "version": "1.0.0",
+  "description": "Web extension  to help the user when using the Stock Market for the game Cookie Clicker.",
+  "main": "popup.js",
+  "author": "github.com/GoDenisGo",
+  "eslintConfig": {
+    "extends": "portsoc",
+    "root": true,
+    "env": {
+      "browser": true
+    }
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-portsoc": "^1.0.1"
+  }
+}
