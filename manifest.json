@@ -15,8 +15,5 @@
       "matches": ["https://orteil.dashnet.org/cookieclicker/"],
       "js": ["./content/contents.js"]
     }
-  ],
-  "permissions": [
-    "storage"
   ]
 }

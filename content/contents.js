@@ -24,9 +24,19 @@ function stockSymbolAndPrice(s) {
   return { symbol, price };
 }
 
-// Sends a message containing stock data to the extension.
-function sendStocks(sl) {
-  chrome.runtime.sendMessage({ stockList: sl });
+function bankLevel() {
+  const level = document.querySelector('#productLevel5').textContent;
+
+  console.log(level);
+  console.log(level.slice(4));
+
+  return level.slice(4);
 }
 
-setTimeout(activeStocks, 1500);
+// Sends a message containing stock data to the extension.
+function sendStocks(sl) {
+  const level = bankLevel();
+  chrome.runtime.sendMessage({ stockList: sl, level });
+}
+
+setTimeout(activeStocks, 3500);
