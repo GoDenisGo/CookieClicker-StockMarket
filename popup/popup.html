@@ -24,6 +24,17 @@
         </tbody>
     </table>
 
+    <!-- 
+        Below is the template. 
+        The <tr>...</tr> is the content that gets copied into the above table.
+        Each <td> in this template will be updated with: NAME, CURRENT PRICE, SOFT MINIMUM between them all.
+        E.g. <td>CRL</td>
+             <td>$5.02</td>
+             <td>%120</td>
+
+        The code for this is in line 10, popup.js. Refer to MDN (https://developer.mozilla.org/en-US/) for
+        more help on useful JS functions and HTML tags.
+    -->
     <template id="stockRow">
         <tr>
             <td></td>
@@ -32,11 +43,14 @@
         </tr>
     </template>
 
+    <!-- 
+    This section explains the mechanics of the game. It describes how Cookie Clicker decides 
+    what price the stocks should be.
+    -->
     <section>
         <p>
             A <b>Soft Minimum</b> refers to the minimum price that a stock can stabilise to.
-            It is recommended to buy a stock when its value lies between the Soft and Hard
-            Minimums.
+            It is recommended to buy a stock when its value lies as close to $1 as possible.
         </p>
         <p>
             A <b>Hard Minimum</b> refers to the lowest price that a stock can reach.
